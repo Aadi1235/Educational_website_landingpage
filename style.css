@@ -76,6 +76,9 @@ body {
     transform: scale(1.2);
     color: var(--main-color);
 }
+.header-icons,#menu-icon{
+    display: none;
+}
 
 #menu-icon {
     font-size: 34px;
@@ -436,6 +439,15 @@ header.sticky {
     color: var(--main-color);
 }
 
+#icon{
+    display: none;
+}
+
+#menu-icon{
+    display: none;
+}
+
+
 @media (max-width: 1410px){
     header{
         padding: 10px 3%;
@@ -453,7 +465,7 @@ header.sticky {
         padding: 70px 3%;
         transition: .2s; 
     }
-    contact{
+    .contact{
         padding: 60px 3%;
         transition: .2s;
     }
@@ -521,6 +533,48 @@ header.sticky {
     .about{
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .navbar,
+    #icon{
+display: block;
+    }
+    .header-icons,#menu-icon{
+        display: block;
+    }
+
+    #menu-icon{
+        display: block;
+        margin-left: 92%;
+        margin-top: -10%;
+
+    }
+    .navbar  {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 2;
+    }
+
+    
+    .navbar ul li i {
+        color: #fff;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    #icon {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    #icon{
+        display: block;
     }
 }
 
