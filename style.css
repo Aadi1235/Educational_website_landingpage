@@ -47,17 +47,18 @@ body {
     display: flex;
  }
 
- .navbar li {
-    color: var(--text-color);
+ .navbar li a {
+    color: var(--second-color);
     font-weight: 600;
     font-size: var(--p-font);
     padding: 10px 22px;
     transition: all .40s ease; 
  }
 
- .navbar li:hover {
+ .navbar li a:hover {
     transform: scale(1.2);
     color: var(--main-color);
+    cursor: pointer;
  }
  .header-icons {
     display: flex;
@@ -76,7 +77,7 @@ body {
     transform: scale(1.2);
     color: var(--main-color);
 }
-.header-icons,#menu-icon{
+ #menu-icon,#icon{
     display: none;
 }
 
@@ -478,7 +479,7 @@ header.sticky {
         --p-font: 1rem;
         transition: .1s;
      } 
-     home{
+     .home{
         height: 84vh;
      }
 }
@@ -490,7 +491,7 @@ header.sticky {
     .navbar{
       position: absolute;
       top: 100%;
-      right: -100;
+      right: -100px;
       width: 300px;
       height: 110vh;
       background: var(--main-color);
