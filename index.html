@@ -1,114 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <title>Educational Website</title>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo"> 
-        <img src="./images/logo.png">
-      </a>   
-      <ul class="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Educational Website</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="./images/logo.png">
+    </a>
+    <div class="right">
+      <ul class="navbar" id="sidemenu">
         <li><a href="#Home"></a>Home</li>
         <li><a href="#Categories"></a>Categories</li>
         <li><a href="#Courses"></a>Courses</li>
         <li><a href="#About Us"></a>About Us</li>
         <li><a href="#Contact"></a>Contact</li>
+        <i class="bx bx-window-close" id="icon"onclick="closemenu()"></i>
       </ul>
+    </div>
 
-      <div class="header-icons">
-        <a href="#"><i class="bx bx-user"></i></a>
-        <a href="#"><i class="bx bx-heart"></i></a>
-        <a href="#"><i class="bx bx-cart"></i></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+
+    <div class="header-icons">
+      <a href="#"><i class="bx bx-user"></i></a>
+      <a href="#"><i class="bx bx-heart"></i></a>
+      <a href="#"><i class="bx bx-cart"></i></a>
+      <i class="bx bx-menu"  id="menu-icon icon" onclick="openmenu()"></i>
+    </div>
+  </header>
+
+  <!--home section-->
+
+  <section class="home" id="home">
+    <div class="home-text">
+      <h6>Best Online learning platform</h6>
+      <h1>Accessible Online Courses For All</h1>
+      <p>learning new skills</p>
+      <div class="latter">
+        <form>
+          <input type="email" placeholder="Enter your Email" required />
+          <input type="submit" value="Lets Start" required />
+        </form>
       </div>
-    </header>
-
-    <!--home section-->
-
-    <section class="home" id="home">
-      <div class="home-text">
-        <h6>Best Online learning platform</h6>
-        <h1>Accessible Online Courses For All</h1>
-        <p>learning new skills</p>
-        <div class="latter">
-          <form>
-            <input type="email" placeholder="Enter your Email" required />
-            <input type="submit" value="Lets Start" required />
-          </form>
-        </div>
+    </div>
+    <div class="home-image">
+      <img src="./images/girl.png" />
+    </div>
+  </section>
+  <!--container section-->
+  <section class="container">
+    <div class="container-box">
+      <div class="container-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-mortarboard"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+          <path
+            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+        </svg>
       </div>
-      <div class="home-image">
-        <img src="./images/girl.png" />
+      <div class="container-text">
+        <h4>5K</h4>
+        <p>Online courses</p>
       </div>
-    </section>
-    <!--container section-->
-    <section class="container">
-      <div class="container-box">
-        <div class="container-img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-          </svg>
-        </div>
-        <div class="container-text">
-          <h4>5K</h4>
-          <p>Online courses</p>
-        </div>
+    </div>
+
+    <div class="container-box">
+      <div class="container-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-briefcase"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5" />
+        </svg>
       </div>
-
-      <div class="container-box">
-        <div class="container-img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
-          </svg>
-        </div>
-        <div class="container-text">
-          <h4>5K</h4>
-          <p>Online courses</p>
-        </div>
+      <div class="container-text">
+        <h4>5K</h4>
+        <p>Online courses</p>
       </div>
+    </div>
 
-      <div class="container-box">
-        <div class="container-img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-backpack2" viewBox="0 0 16 16">
-            <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14"/>
-            <path fill-rule="evenodd" d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
-            <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.5 2.5 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0M3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z"/>
-          </svg>
-        </div>
-        <div class="container-text">
-          <h4>5K</h4>
-          <p>Online courses</p>
-        </div>
+    <div class="container-box">
+      <div class="container-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-backpack2"
+          viewBox="0 0 16 16">
+          <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14" />
+          <path fill-rule="evenodd"
+            d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z" />
+          <path
+            d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.5 2.5 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0M3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z" />
+        </svg>
       </div>
-
-      <div class="container-box">
-        <div class="container-img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
-          </svg>
-        </div>
-        <div class="container-text">
-          <h4>5K</h4>
-          <p>Online courses</p>
-        </div>
+      <div class="container-text">
+        <h4>5K</h4>
+        <p>Online courses</p>
       </div>
+    </div>
 
-    </section>
+    <div class="container-box">
+      <div class="container-img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pencil"
+          viewBox="0 0 16 16">
+          <path
+            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+        </svg>
+      </div>
+      <div class="container-text">
+        <h4>5K</h4>
+        <p>Online courses</p>
+      </div>
+    </div>
 
-    <!--categories section -->
-    <section class="categories" id="categories">
-      <div class="center-text">
-        <h5>CATEGORIES</h5>
-        <h2>Popular Categories</h2>
+  </section>
+
+  <!--categories section -->
+  <section class="categories" id="categories">
+    <div class="center-text">
+      <h5>CATEGORIES</h5>
+      <h2>Popular Categories</h2>
     </div>
 
     <div class="categories-content">
@@ -119,39 +137,39 @@
       </div>
 
       <div class="box">
-      <img src="./images/React.png">
+        <img src="./images/React.png">
         <h3>React Development</h3>
         <p>intermediate level(with one major Project)</p>
       </div>
 
       <div class="box">
-       <img src="./images/JavaScript.png">
+        <img src="./images/JavaScript.png">
         <h3>JavaScript Development</h3>
         <p>Indepth course(beginner friendly)</p>
       </div>
 
       <div class="box">
-     <img src="./images/git-github.png">
+        <img src="./images/git-github.png">
         <h3>Git-Github</h3>
         <p>All you need to know about Version controls</p>
       </div>
-   </div>
+    </div>
 
     <div class="main-btn">
       <a href="#" class="btn"> All Categories</a>
     </div>
-   </section>
-   <!--start course section-->
+  </section>
+  <!--start course section-->
 
-   <section class="courses" id="courses">
+  <section class="courses" id="courses">
     <div class="center-text">
       <h5>Courses</h5>
       <h2>Explore Popular Courses</h2>
-  </div>
+    </div>
     <div class="courses-content">
       <div class="courses-row">
-         <img src="./images/course1.jpeg">
-         <div class="courses-text">
+        <img src="./images/course1.jpeg">
+        <div class="courses-text">
           <h5>$20.00</h5>
           <h3>Complete HTML,CSS and javaScript course</h3>
           <h2>05hr 15min</h2>
@@ -162,10 +180,10 @@
               <a href="#"><i class='bx bxs-star'></i></a>
               <a href="#"><i class='bx bxs-star'></i></a>
               <a href="#"><i class='bx bxs-star'></i></a>
-              </div>
-              <div class="review">
-                <p>{5 Reviews}</p>
-              </div>
+            </div>
+            <div class="review">
+              <p>{5 Reviews}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -173,72 +191,73 @@
       <div class="courses-row">
         <img src="./images/course2.jpeg">
         <div class="courses-text">
-         <h5>$20.00</h5>
-         <h3>Complete HTML,CSS and javaScript course</h3>
-         <h2>05hr 15min</h2>
-         <div class="rating">
-           <div class="star">
-             <a href="#"><i class='bx bxs-star'></i></a>
-             <a href="#"><i class='bx bxs-star'></i></a>
-             <a href="#"><i class='bx bxs-star'></i></a>
-             <a href="#"><i class='bx bxs-star'></i></a>
-             <a href="#"><i class='bx bxs-star'></i></a>
-             </div>
-             <div class="review">
-               <p>{5 Reviews}</p>
-             </div>
-         </div>
-       </div>
-     </div>
+          <h5>$20.00</h5>
+          <h3>Complete HTML,CSS and javaScript course</h3>
+          <h2>05hr 15min</h2>
+          <div class="rating">
+            <div class="star">
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+            </div>
+            <div class="review">
+              <p>{5 Reviews}</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-     <div class="courses-row">
-      <img src="./images/course3.avif">
-      <div class="courses-text">
-       <h5>$20.00</h5>
-       <h3>Complete HTML,CSS and javaScript course</h3>
-       <h2>05hr 15min</h2>
-       <div class="rating">
-         <div class="star">
-           <a href="#"><i class='bx bxs-star'></i></a>
-           <a href="#"><i class='bx bxs-star'></i></a>
-           <a href="#"><i class='bx bxs-star'></i></a>
-           <a href="#"><i class='bx bxs-star'></i></a>
-           <a href="#"><i class='bx bxs-star'></i></a>
-           </div>
-           <div class="review">
-             <p>{5 Reviews}</p>
-           </div>
-       </div>
-     </div>
-   </div>
+      <div class="courses-row">
+        <img src="./images/course3.avif">
+        <div class="courses-text">
+          <h5>$20.00</h5>
+          <h3>Complete HTML,CSS and javaScript course</h3>
+          <h2>05hr 15min</h2>
+          <div class="rating">
+            <div class="star">
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+            </div>
+            <div class="review">
+              <p>{5 Reviews}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="main-btn">
       <a href="#" class="btn">Buy now</a>
-    </div> 
-   </section>
-   <!--about section-->
-   <section class="about" id="about">
+    </div>
+  </section>
+  <!--about section-->
+  <section class="about" id="about">
     <div class="about-img">
       <img src="./images/cta-left-image.png">
     </div>
     <div class="about-text">
       <h2>Want to share your Knowledge? Join us as a Mentor</h2>
-      <p>HD videos, Full end to  end support with our live classes</p>
+      <p>HD videos, Full end to end support with our live classes</p>
       <h4>Best Courses</h4>
       <h5>Best Teachers</h5>
       <div class="main-btn">
-        <a href="#" class="btn">Read more</a></div>
+        <a href="#" class="btn">Read more</a>
       </div>
+    </div>
   </section>
   <!--start contact section-->
-    <section class="contact" id="contact"> 
-     <div class="main-contact">
+  <section class="contact" id="contact">
+    <div class="main-contact">
       <div class="contact-content">
         <img src="./images/logo.png">
-         <li><a href="#">Facebook</a></li>
-         <li><a href="#">Instagram</a></li>
-         <li><a href="#">X</a></li>
-        </div>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X</a></li>
+      </div>
 
       <div class="contact-content">
         <li><a href="#"></a>Profile</li>
@@ -248,15 +267,16 @@
         <li><a href="#"></a>Dashboard</li>
       </div>
       <div class="contact-content">
-           <li><a href="#">New Delhi,<br>India</a></li>
-           <li><a href="#">Eduwell@gmail.com</a></li>
-           <li><a href="#">012345678</a></li>
-         </div>
-        </div>
+        <li><a href="#">New Delhi,<br>India</a></li>
+        <li><a href="#">Eduwell@gmail.com</a></li>
+        <li><a href="#">012345678</a></li>
+      </div>
+    </div>
 
-     </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
